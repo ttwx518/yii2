@@ -10,8 +10,8 @@ use app\modules\admin\controllers\BaseController;
 class IndexController extends BaseController
 {
     /**
-     * Renders the index view for the module
-     * @return string
+     *
+     *后台首页控制器
      */
    
     public function actionIndex()
@@ -20,7 +20,8 @@ class IndexController extends BaseController
     }
 
     public function actionAbout(){
-    	var_dump(time());exit;
+
+    	return $this->render('about');
     }
 
 
